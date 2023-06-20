@@ -1,0 +1,54 @@
+body {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.box {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+
+  margin-top: 50px 0 30px 0;
+}
+
+input[type="text"] {
+  padding: 10px 0;
+}
+
+input[type="submit"] {
+  padding: 10px 5px;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+hr {
+  width: 100%;
+}
+
+ul {
+  width: 80%;
+
+  padding: 10px 0;
+  list-style: none;
+}
+
+ul li {
+  padding: 0 10px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.message {
+  color: red;
+}
