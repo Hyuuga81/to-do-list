@@ -23,17 +23,29 @@ const enterItem = () => {
     listItem.innerHTML = `<p>${item.value}</p><i class="fa-solid fa-trash"></i>`;
     list.append(listItem);
     clear();
-    delete(listItem);
+
+    listItem.addEventListener('click', function() {
+      // listItem.style.textDecoration = 'line-through';
+      listItem.style.display = 'none';
+    });
 	}
+
 }
 
+
+
+
+
+
+
 // delete listItem. pass listItem from enterItem 
-const deleteItem = (listItem) => {
-  const junk = listItem.querySelectorAll('.fa-trash');
-  for (let item of junk) {
-    item.style.display = 'none';
-  }
-};
+// const deleteItem = () => {
+//   const junk = document.querySelectorAll('.fa-trash');
+//   for (let item of junk) {
+//     item.parentElement.style.display = 'none';
+//   }
+// };
+
 
 
 

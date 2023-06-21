@@ -18,6 +18,7 @@ body {
 
 input[type="text"] {
   padding: 10px 0;
+  outline: none;
 }
 
 input[type="submit"] {
@@ -51,4 +52,45 @@ ul li {
 
 .message {
   color: red;
+}
+
+.fa-trash {
+  cursor: pointer;
+}
+
+/* TABLET STYLES */
+@media (min-width: 768px) {
+  .box h1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  input[type="text"] {
+    width: 50%;
+    margin-bottom: 40px;
+  }
+
+  input[type="submit"] {
+    margin-bottom: 40px;
+  }
+
+  ul {
+    width: 55%;
+  }
+}
+
+/* DESKTOP STYLES */
+@media (min-width: 1200px) {
+  input[type="text"] {
+    width: 30%;
+  }
+
+  hr {
+    width: 70%;
+  }
+
+  ul {
+    width: 35%;
+  }
+
 }
